@@ -10,4 +10,4 @@ function [A] = OperatorAssembler(N)
   DiagTemplate = speye(N)
   
   % Assemble A
-  A = N^2*kron(DiagTemplate, DiagBlock) + kron(OffDiagTemplate, OffDiagBlock)
+  A = N^2*(kron(DiagTemplate, DiagBlock) + kron(OffDiagTemplate, OffDiagBlock))
