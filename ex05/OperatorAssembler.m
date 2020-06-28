@@ -1,0 +1,1 @@
+function A = OperatorAssembler(N)  %elemts scaled by 1/h^2  ex = N^2*ones(N-1,1);  % 1D laplace  Dxx = spdiags([-ex 2*ex -ex], [-1 0 1], N-1, N-1);  % 2D laplace. Taken from wikipedia  A = kron(Dxx, speye(N-1)) + kron(speye(N-1), Dxx);end
