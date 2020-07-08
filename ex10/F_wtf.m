@@ -1,1 +1,0 @@
-function fx = F_wtf(x)  a = sum((x-[0.5,0.5]').^2, 1);  fx = zeros(1,length(a));  fx((a<=0.2^2)) = 0.2;end
