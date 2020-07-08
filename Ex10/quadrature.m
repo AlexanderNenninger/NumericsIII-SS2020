@@ -18,7 +18,7 @@ function Q = quadrature(number)
 	order = {
 		1,
 		2,
-	        [].
+		[],
 		[]
 	};
 
