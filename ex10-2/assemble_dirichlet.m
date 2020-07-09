@@ -1,0 +1,1 @@
+function [A,b] = assemble_dirichlet(grid, A, b, g)  Id_g = diag(grid.nodes(3,:));  A = (speye(length(grid.nodes(3,:)))-Id_g)*A + Id_g;  b(grid.nodes(3,:)==1) = g(grid.nodes(1:2,:))(grid.nodes(3,:)==1);end
